@@ -1,0 +1,13 @@
+extends layout
+
+
+block content
+  div.row.cf_main
+    div.container
+      section.list_article
+          each news, i in newslist
+            article.inner
+              a(href="#").pic
+                img(src="#{news.previewPicture}")
+              div.description
+                a(href="/stmegi/f/"+news._id).title= news.previewTitle

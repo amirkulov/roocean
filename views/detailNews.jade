@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div.row.cf_detail
+    div.container
+
+        h2=detailInfoNews.detailTitle
+        img(src="#{detailInfoNews.detailPicture}")
+        p=detailInfoNews.detailText
